@@ -42,7 +42,7 @@ function App() {
 
   const handleClick = () => {
     if(!currentView) return;
-    currentView.goTo([10.7522, 59.9139])
+    currentView.goTo({center:[10.7522, 59.9139]}, {duration: 5000})
   }
 
   const handleToggle = () => {
