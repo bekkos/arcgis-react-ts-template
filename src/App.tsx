@@ -7,7 +7,7 @@ import esriConfig from "@arcgis/core/config.js"
 import { useEffect, useRef, useState } from 'react';
 
 function App() {
-  esriConfig.apiKey = ""
+  esriConfig.apiKey = import.meta.env.VITE_ARCGIS_AUTH_KEY;
   
   const mapRef = useRef<HTMLDivElement | null>(null);
   const [currentMap, setMap] = useState<Map>();
